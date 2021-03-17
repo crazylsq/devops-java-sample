@@ -53,7 +53,7 @@ pipeline {
 
       stage('deploy to dev') {
         steps {
-          kubernetesDeploy(configs: 'deploy/dev/**', enableConfigSubstitution: true, kubeConfig: [path: '.kube/config'])
+          kubernetesDeploy(configs: 'deploy/devops-java-sample/**', enableConfigSubstitution: true, kubeConfig: [path: '.kube/config'])
         }
       }
   }
